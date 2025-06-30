@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 # Define path to memory
-MEMORY_PATH = Path("../memory/project_von_memory.json")
+MEMORY_PATH = Path("memory/project_von_memory.json")
 
 # Load memory
 with open(MEMORY_PATH, 'r', encoding='utf-8') as f:

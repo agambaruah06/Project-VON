@@ -1,0 +1,346 @@
+{
+  "$schemaVersion": "2025-06-29",
+  "description": "AI mentor memory configuration for user Titu (sphinx8488)",
+  "timeZone": "Asia/Kolkata",
+  "userProfile": {
+    "userId": "sphinx8488",
+    "name": "Titu",
+    "created": "2025-06-01T00:00:00Z",
+    "version": "1.2",
+    "lactoseIntolerant": true,
+    "privacy": {
+      "zeroKnowledge": true,
+      "encryption": "AES-256",
+      "keyRotation": "annual"
+    }
+  },
+  "userGoals": [
+    {
+      "id": 1,
+      "description": "Reduce body fat to 15%",
+      "metrics": [
+        "bodyWeight",
+        "bodyFatPercent",
+        "gymAttendance"
+      ],
+      "currentValues": [
+        {
+          "metric": "bodyWeight",
+          "value": 68.2,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "bodyFatPercent",
+          "value": 22.5,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "gymAttendance",
+          "value": 3,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
+      ],
+      "progressPercent": 38,
+      "timelineWeeks": 12,
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "description": "Improve study consistency",
+      "metrics": [
+        "studyHours",
+        "focusScore"
+      ],
+      "currentValues": [
+        {
+          "metric": "studyHours",
+          "value": 2.5,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "focusScore",
+          "value": 7,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
+      ],
+      "progressPercent": 50,
+      "timelineWeeks": 8,
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "description": "Become the best version of myself",
+      "metrics": [
+        "focusScore"
+      ],
+      "currentValues": [
+        {
+          "metric": "focusScore",
+          "value": 6,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
+      ],
+      "progressPercent": 16,
+      "timelineWeeks": 30,
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    }
+  ],
+  "customMetricDefinitions": {
+    "bodyWeight": {
+      "description": "User weight in kg measured weekly",
+      "valueType": "float",
+      "unit": "kg",
+      "min": 30,
+      "max": 150,
+      "aggregation": "latest",
+      "period": "weekly"
+    },
+    "bodyFatPercent": {
+      "description": "Body fat percentage",
+      "valueType": "float",
+      "min": 3,
+      "max": 50,
+      "aggregation": "latest",
+      "period": "weekly"
+    },
+    "gymAttendance": {
+      "description": "Gym visits per week",
+      "valueType": "integer",
+      "min": 0,
+      "max": 14,
+      "aggregation": "sum",
+      "period": "weekly"
+    },
+    "studyHours": {
+      "description": "Focused study time per day",
+      "valueType": "float",
+      "unit": "hours",
+      "min": 0,
+      "max": 24,
+      "aggregation": "sum",
+      "period": "daily"
+    },
+    "focusScore": {
+      "description": "User-rated focus (1\u201310)",
+      "valueType": "integer",
+      "min": 1,
+      "max": 10,
+      "aggregation": "average",
+      "period": "weekly"
+    }
+  },
+  "habitsToChange": [
+    {
+      "id": 1,
+      "habit": "Wake up late",
+      "baseline": "08:30",
+      "target": "06:00",
+      "progress": "2/7 days",
+      "currentStreak": 2,
+      "difficulty": 7,
+      "replacement": "Sleep by 10:30 PM",
+      "triggers": [
+        "late night phone use"
+      ],
+      "rewardSchedule": "daily checkmark",
+      "habitStacking": "brush teeth, then open curtains",
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    },
+    {
+      "id": 2,
+      "habit": "Scrolling reels",
+      "baseline": "2 hours",
+      "target": "15 min",
+      "progress": "1/7 days",
+      "currentStreak": 1,
+      "difficulty": 6,
+      "replacement": "Reading or journaling",
+      "triggers": [
+        "boredom"
+      ],
+      "rewardSchedule": "weekly celebration",
+      "habitStacking": "after dinner, put phone away",
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "habit": "Watching porn",
+      "baseline": "5 times per week",
+      "target": "0 times",
+      "progress": "3/7 days",
+      "currentStreak": 3,
+      "difficulty": 9,
+      "replacement": "Cold shower, journaling urges",
+      "triggers": [
+        "boredom",
+        "late_night"
+      ],
+      "environmentTweaks": [
+        "Instagram blocker 9PM-6AM"
+      ],
+      "rewardSchedule": "monthly progress reflection",
+      "habitStacking": "brush teeth, then meditation",
+      "lastUpdated": "2025-06-29T12:00:00Z"
+    }
+  ],
+  "preferences": {
+    "avatar": "futuristic owl",
+    "voice": {
+      "style": "calm",
+      "speed": 1.2,
+      "maxSpeed": 1.5
+    },
+    "interactionModes": [
+      "text",
+      "voice"
+    ],
+    "themeColor": "midnight blue",
+    "accessibility": {
+      "captions": true,
+      "transcripts": true
+    }
+  },
+  "sessionContext": {
+    "messages": [],
+    "slidingWindowPolicy": "dynamicWithRelevanceScoring",
+    "availableSessionFlags": {
+      "urgent": "Requires immediate attention",
+      "private": "Not for coaching or sharing",
+      "coachable": "Open to feedback",
+      "lowPriority": "Defer if busy"
+    }
+  },
+  "memoryManagement": {
+    "memoryPersistence": {
+      "immutable": [
+        "userProfile",
+        "preferences"
+      ],
+      "mutable": [
+        "userGoals",
+        "habitsToChange",
+        "sessionContext"
+      ],
+      "privateData": [
+        {
+          "path": "habitsToChange",
+          "filter": {
+            "id": 3
+          }
+        }
+      ]
+    },
+    "retrievalStrategy": {
+      "semanticSearch": true,
+      "similarityThreshold": 0.85
+    },
+    "userControl": {
+      "edit": true,
+      "audit": true,
+      "snapshotRestore": true
+    },
+    "consistencyChecks": true,
+    "storagePolicy": {
+      "backupPolicy": "weekly",
+      "encryption": "AES-256",
+      "zeroKnowledge": true
+    },
+    "errorHandling": {
+      "gracefulDegradation": true,
+      "errorCodes": {
+        "ENOTFOUND": "Memory item not found",
+        "EPARSE": "Memory parse error"
+      },
+      "fallbackAction": "promptUserForInput"
+    },
+    "feedbackLoop": {
+      "weeklyPrompts": true,
+      "ratings": true,
+      "freeTextFeedback": true
+    },
+    "goalTracking": {
+      "visualProgress": true,
+      "milestones": true
+    },
+    "contextAwareHabitSupport": {
+      "triggerActionReminders": true,
+      "environmentTweaks": true,
+      "habitStacking": true
+    },
+    "personalizedMotivation": {
+      "dynamicTone": true,
+      "celebrateSmallWins": true
+    },
+    "enhancedMemoryFeatures": {
+      "tagging": true,
+      "reflection": true,
+      "visualTimeline": true,
+      "episodicMemory": true
+    },
+    "advancedPrivacyAndSecurity": {
+      "selectiveSharing": true,
+      "sessionFlags": true
+    },
+    "proactiveSupport": {
+      "burnoutDetection": true,
+      "resourceLibrary": true,
+      "checkIns": true
+    },
+    "collaborativePlanning": {
+      "calendarIntegration": true,
+      "jointGoalWorkshops": true
+    },
+    "emotionalResilience": {
+      "moodTracking": true,
+      "journaling": true,
+      "crisisProtocols": true
+    },
+    "continuousLearning": {
+      "schemaVersioning": true,
+      "featureRequests": true
+    },
+    "performanceMonitoring": {
+      "logRetrievalSpeed": true,
+      "logAccuracy": true,
+      "benchmark": {
+        "source": "historicalPerformance",
+        "retrievalSpeedMs": 100,
+        "accuracyScore": 0.97
+      }
+    },
+    "memoryCleanupPolicy": {
+      "cleanupCriteria": "inactive for 6 months"
+    },
+    "userManualOverride": true,
+    "overrideLog": [],
+    "attachmentValidation": {
+      "maxSizeMB": 5,
+      "allowedTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "malwareScan": true
+    }
+  },
+  "crisisProtocol": {
+    "emergencyContacts": [
+      {
+        "name": "Primary Support",
+        "phone": "<REDACTED>"
+      }
+    ],
+    "escalationSteps": [
+      "Call emergency contact",
+      "Send referral message"
+    ],
+    "autoDetectionTriggers": [
+      "suicidalKeyword",
+      "panicPhrases"
+    ],
+    "responseDelayMs": 1500
+  },
+  "dateFormat": {
+    "dates": "ISO 8601",
+    "times": "HH:mm"
+  }
+}
