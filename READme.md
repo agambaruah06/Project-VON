@@ -96,3 +96,9 @@ Please use GitHub Issues or Discussions for engagement.
 ## 🧵 Philosophy
 
 *Built with care, not just code.*
+
+## 🎯 Personal-First Philosophy
+
+- **Purpose:** This is primarily a personal AI project for private use.
+- **Priority:** Build functionality that meets personal needs first.
+- **Public Sharing:** Will only be considered after it's proven useful and safe.
