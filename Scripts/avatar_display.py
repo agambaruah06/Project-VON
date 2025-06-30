@@ -3,7 +3,8 @@ from PyQt5.QtWidgets import QApplication, QLabel, QWidget, QVBoxLayout
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 
-IMAGE_PATH = "../memory/avatar.png"
+import os
+IMAGE_PATH = 'memory/avatar.png'
 
 class AvatarWindow(QWidget):
     def __init__(self):
