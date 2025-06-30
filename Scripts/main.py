@@ -16,7 +16,7 @@ for goal in memory.get('userGoals', []):
     print(f"Progress: {goal.get('progressPercent')}%")
     print("-" * 40)
 
-# Example: update progress on goal 1
+    # Example: update progress on goal 1
 for goal in memory.get('userGoals', []):
     if goal['id'] == 1:
         goal['progressPercent'] += 5
