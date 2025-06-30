@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 
 # === CONFIG ===
-MEMORY_PATH = "memory/project_von_memory.json"
+MEMORY_PATH = "../memory/project_von_memory.json"
 
 # === Load memory ===
 def load_memory():

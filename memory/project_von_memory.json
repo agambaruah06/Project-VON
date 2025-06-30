@@ -18,11 +18,27 @@
     {
       "id": 1,
       "description": "Reduce body fat to 15%",
-      "metrics": ["bodyWeight", "bodyFatPercent", "gymAttendance"],
+      "metrics": [
+        "bodyWeight",
+        "bodyFatPercent",
+        "gymAttendance"
+      ],
       "currentValues": [
-        {"metric": "bodyWeight", "value": 68.2, "timestamp": "2025-06-29T08:30:00Z"},
-        {"metric": "bodyFatPercent", "value": 22.5, "timestamp": "2025-06-29T08:30:00Z"},
-        {"metric": "gymAttendance", "value": 3, "timestamp": "2025-06-29T08:30:00Z"}
+        {
+          "metric": "bodyWeight",
+          "value": 68.2,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "bodyFatPercent",
+          "value": 22.5,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "gymAttendance",
+          "value": 3,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
       ],
       "progressPercent": 33,
       "timelineWeeks": 12,
@@ -31,10 +47,21 @@
     {
       "id": 2,
       "description": "Improve study consistency",
-      "metrics": ["studyHours", "focusScore"],
+      "metrics": [
+        "studyHours",
+        "focusScore"
+      ],
       "currentValues": [
-        {"metric": "studyHours", "value": 2.5, "timestamp": "2025-06-29T08:30:00Z"},
-        {"metric": "focusScore", "value": 7, "timestamp": "2025-06-29T08:30:00Z"}
+        {
+          "metric": "studyHours",
+          "value": 2.5,
+          "timestamp": "2025-06-29T08:30:00Z"
+        },
+        {
+          "metric": "focusScore",
+          "value": 7,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
       ],
       "progressPercent": 50,
       "timelineWeeks": 8,
@@ -43,9 +70,15 @@
     {
       "id": 3,
       "description": "Become the best version of myself",
-      "metrics": ["focusScore"],
+      "metrics": [
+        "focusScore"
+      ],
       "currentValues": [
-        {"metric": "focusScore", "value": 6, "timestamp": "2025-06-29T08:30:00Z"}
+        {
+          "metric": "focusScore",
+          "value": 6,
+          "timestamp": "2025-06-29T08:30:00Z"
+        }
       ],
       "progressPercent": 16,
       "timelineWeeks": 30,
@@ -106,7 +139,9 @@
       "currentStreak": 2,
       "difficulty": 7,
       "replacement": "Sleep by 10:30 PM",
-      "triggers": ["late night phone use"],
+      "triggers": [
+        "late night phone use"
+      ],
       "rewardSchedule": "daily checkmark",
       "habitStacking": "brush teeth, then open curtains",
       "lastUpdated": "2025-06-29T12:00:00Z"
@@ -120,7 +155,9 @@
       "currentStreak": 1,
       "difficulty": 6,
       "replacement": "Reading or journaling",
-      "triggers": ["boredom"],
+      "triggers": [
+        "boredom"
+      ],
       "rewardSchedule": "weekly celebration",
       "habitStacking": "after dinner, put phone away",
       "lastUpdated": "2025-06-29T12:00:00Z"
@@ -134,8 +171,13 @@
       "currentStreak": 3,
       "difficulty": 9,
       "replacement": "Cold shower, journaling urges",
-      "triggers": ["boredom", "late_night"],
-      "environmentTweaks": ["Instagram blocker 9PM-6AM"],
+      "triggers": [
+        "boredom",
+        "late_night"
+      ],
+      "environmentTweaks": [
+        "Instagram blocker 9PM-6AM"
+      ],
       "rewardSchedule": "monthly progress reflection",
       "habitStacking": "brush teeth, then meditation",
       "lastUpdated": "2025-06-29T12:00:00Z"
@@ -148,7 +190,10 @@
       "speed": 1.2,
       "maxSpeed": 1.5
     },
-    "interactionModes": ["text", "voice"],
+    "interactionModes": [
+      "text",
+      "voice"
+    ],
     "themeColor": "midnight blue",
     "accessibility": {
       "captions": true,
@@ -156,7 +201,58 @@
     }
   },
   "sessionContext": {
-    "messages": [],
+    "messages": [
+      {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2025-06-30T14:56:35.914177Z"
+      },
+      {
+        "role": "von",
+        "content": "Hi! I'm Von. How can I help you today?",
+        "timestamp": "2025-06-30T14:56:35.914177Z"
+      },
+      {
+        "role": "user",
+        "content": "I feel lazy today",
+        "timestamp": "2025-06-30T14:56:52.399246Z"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try setting a tiny goal together.",
+        "timestamp": "2025-06-30T14:56:52.399246Z"
+      },
+      {
+        "role": "user",
+        "content": "lets do it",
+        "timestamp": "2025-06-30T14:56:58.006559Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-06-30T14:56:58.007668Z"
+      },
+      {
+        "role": "user",
+        "content": "lets set a  schedule",
+        "timestamp": "2025-06-30T14:57:08.966841Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-06-30T14:57:08.967839Z"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-06-30T14:57:11.153546Z"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-06-30T14:57:11.153546Z"
+      }
+    ],
     "slidingWindowPolicy": "dynamicWithRelevanceScoring",
     "availableSessionFlags": {
       "urgent": "Requires immediate attention",
@@ -167,10 +263,22 @@
   },
   "memoryManagement": {
     "memoryPersistence": {
-      "immutable": ["userProfile", "preferences"],
-      "mutable": ["userGoals", "habitsToChange", "sessionContext"],
+      "immutable": [
+        "userProfile",
+        "preferences"
+      ],
+      "mutable": [
+        "userGoals",
+        "habitsToChange",
+        "sessionContext"
+      ],
       "privateData": [
-        { "path": "habitsToChange", "filter": { "id": 3 } }
+        {
+          "path": "habitsToChange",
+          "filter": {
+            "id": 3
+          }
+        }
       ]
     },
     "retrievalStrategy": {
@@ -258,7 +366,10 @@
     "overrideLog": [],
     "attachmentValidation": {
       "maxSizeMB": 5,
-      "allowedTypes": ["image/jpeg", "image/png"],
+      "allowedTypes": [
+        "image/jpeg",
+        "image/png"
+      ],
       "malwareScan": true
     }
   },
@@ -269,8 +380,14 @@
         "phone": "<REDACTED>"
       }
     ],
-    "escalationSteps": ["Call emergency contact", "Send referral message"],
-    "autoDetectionTriggers": ["suicidalKeyword", "panicPhrases"],
+    "escalationSteps": [
+      "Call emergency contact",
+      "Send referral message"
+    ],
+    "autoDetectionTriggers": [
+      "suicidalKeyword",
+      "panicPhrases"
+    ],
     "responseDelayMs": 1500
   },
   "dateFormat": {
