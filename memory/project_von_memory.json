@@ -321,6 +321,126 @@
         "role": "von",
         "content": "Goodbye. Take care of yourself. 🌱",
         "timestamp": "2025-07-01T03:47:45.755274Z"
+      },
+      {
+        "role": "user",
+        "content": "heloo",
+        "timestamp": "2025-07-01T04:59:35.672747Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-07-01T04:59:39.064662Z"
+      },
+      {
+        "role": "user",
+        "content": "what's ur name?",
+        "timestamp": "2025-07-01T04:59:45.303834Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-07-01T04:59:48.644808Z"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-07-01T04:59:50.160996Z"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-01T04:59:54.203780Z"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-07-01T05:10:35.504009Z"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-01T05:10:39.548556Z"
+      },
+      {
+        "role": "user",
+        "content": "hello",
+        "timestamp": "2025-07-01T05:23:26.725674+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try to plan a tiny next step together.",
+        "timestamp": "2025-07-01T05:23:29.624523+00:00"
+      },
+      {
+        "role": "user",
+        "content": "ok",
+        "timestamp": "2025-07-01T05:23:31.365560+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try to plan a tiny next step together.",
+        "timestamp": "2025-07-01T05:23:34.213407+00:00"
+      },
+      {
+        "role": "user",
+        "content": "lets do it",
+        "timestamp": "2025-07-01T05:23:37.808029+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try to plan a tiny next step together.",
+        "timestamp": "2025-07-01T05:23:40.707773+00:00"
+      },
+      {
+        "role": "user",
+        "content": "i am lazy",
+        "timestamp": "2025-07-01T05:23:50.925751+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Feeling unmotivated is normal. Let's pick one tiny goal to start.",
+        "timestamp": "2025-07-01T05:23:55.446920+00:00"
+      },
+      {
+        "role": "user",
+        "content": "ok",
+        "timestamp": "2025-07-01T05:23:56.767646+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Interesting—what would your best self do here?",
+        "timestamp": "2025-07-01T05:23:59.367635+00:00"
+      },
+      {
+        "role": "user",
+        "content": "ok",
+        "timestamp": "2025-07-01T05:24:02.138748+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try to plan a tiny next step together.",
+        "timestamp": "2025-07-01T05:24:04.985856+00:00"
+      },
+      {
+        "role": "user",
+        "content": "ok",
+        "timestamp": "2025-07-01T05:24:05.835478+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Sounds tricky. What do you think would really help?",
+        "timestamp": "2025-07-01T05:24:09.494168+00:00"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-07-01T05:24:10.191351+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-01T05:24:14.252127+00:00"
       }
     ],
     "slidingWindowPolicy": "dynamicWithRelevanceScoring",
