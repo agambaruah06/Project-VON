@@ -3,7 +3,7 @@ import threading
 import time
 import pyttsx3
 
-# 🖼️ Avatar Display Function
+# Avatar Display Function
 def show_avatar():
     img = cv2.imread("C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project VON\\memory\\avatar.png")  # Make sure this file is in the same folder
     if img is None:
