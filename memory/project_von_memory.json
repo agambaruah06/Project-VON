@@ -251,6 +251,46 @@
         "role": "von",
         "content": "Goodbye. Take care of yourself. 🌱",
         "timestamp": "2025-06-30T14:57:11.153546Z"
+      },
+      {
+        "role": "user",
+        "content": "hello von",
+        "timestamp": "2025-07-01T03:33:13.210512Z"
+      },
+      {
+        "role": "von",
+        "content": "Hi! I'm Von. How can I help you today?",
+        "timestamp": "2025-07-01T03:33:17.154221Z"
+      },
+      {
+        "role": "user",
+        "content": "I am lazy",
+        "timestamp": "2025-07-01T03:33:20.621953Z"
+      },
+      {
+        "role": "von",
+        "content": "Let’s try setting a tiny goal together.",
+        "timestamp": "2025-07-01T03:33:23.157715Z"
+      },
+      {
+        "role": "user",
+        "content": "lets do it",
+        "timestamp": "2025-07-01T03:33:25.872910Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-07-01T03:33:29.260732Z"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-07-01T03:33:29.847098Z"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-01T03:33:33.895557Z"
       }
     ],
     "slidingWindowPolicy": "dynamicWithRelevanceScoring",

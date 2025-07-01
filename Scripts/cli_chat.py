@@ -2,8 +2,11 @@ import json
 from datetime import datetime
 import os
 
+from tts_utils import speak_text
+
+
 # === CONFIG ===
-MEMORY_PATH = "../memory/project_von_memory.json"
+MEMORY_PATH = "C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project VON\\memory\\project_von_memory.json"
 
 # === Load memory ===
 def load_memory():
@@ -38,6 +41,8 @@ def append_message(memory, role, text):
 # === MAIN LOOP ===
 def chat_loop():
     print("🧠 Von: Hello, I’m Von. Your personal AI memory.\n(Type 'bye' to exit.)")
+    speak_text('Hello, I’m Von. Your personal AI memory.')
+
 
     memory = load_memory()
 
@@ -51,15 +56,19 @@ def chat_loop():
         if user_input.lower() == "bye":
             von_reply = "Goodbye. Take care of yourself. 🌱"
             print(f"Von: {von_reply}")
+            speak_text(von_reply)
             append_message(memory, "von", von_reply)
             break
 
         von_reply = generate_reply(user_input)
         print(f"Von: {von_reply}")
+        speak_text(von_reply)
         append_message(memory, "von", von_reply)
 
     save_memory(memory)
     print("✅ Session saved to memory.")
+    speak_text("Session saved to memory.")
 
 if __name__ == "__main__":
     chat_loop()
+    
