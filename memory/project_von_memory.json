@@ -291,6 +291,36 @@
         "role": "von",
         "content": "Goodbye. Take care of yourself. 🌱",
         "timestamp": "2025-07-01T03:33:33.895557Z"
+      },
+      {
+        "role": "user",
+        "content": "how are you?",
+        "timestamp": "2025-07-01T03:47:32.452961Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-07-01T03:47:35.791213Z"
+      },
+      {
+        "role": "user",
+        "content": "exit",
+        "timestamp": "2025-07-01T03:47:37.830589Z"
+      },
+      {
+        "role": "von",
+        "content": "Hmm, I’m still learning. Tell me more.",
+        "timestamp": "2025-07-01T03:47:41.223690Z"
+      },
+      {
+        "role": "user",
+        "content": "bye",
+        "timestamp": "2025-07-01T03:47:41.708480Z"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-01T03:47:45.755274Z"
       }
     ],
     "slidingWindowPolicy": "dynamicWithRelevanceScoring",
