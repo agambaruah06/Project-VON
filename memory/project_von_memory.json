@@ -441,6 +441,51 @@
         "role": "von",
         "content": "Goodbye. Take care of yourself. 🌱",
         "timestamp": "2025-07-01T05:24:14.252127+00:00"
+      },
+      {
+        "role": "user",
+        "content": "hi von",
+        "timestamp": "2025-07-02T07:30:04.637448+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Hello! I'm here to help you achieve your goals and become the best version of yourself. Let's get started! What would you like to work on today? Keep in mind that I may challenge you, offer tough love, or push you out of your comfort zone—but it's all for your own growth and betterment. Now, what can I assist you with today?",
+        "timestamp": "2025-07-02T07:30:46.037818+00:00"
+      },
+      {
+        "role": "user",
+        "content": "I want to set my schedule for today.",
+        "timestamp": "2025-07-02T07:30:59.437778+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Great! I'm here to help you organize your day and make sure you have time for everything that matters most to your personal growth. Let's get started:\n\n1. Exercise (Morning): A quick workout or a long run can boost your energy levels and improve your focus throughout the day.\n2. Breakfast (Morning): It's essential to start the day with a healthy meal to fuel your body for the tasks ahead.\n3. Work/School (Morning & Afternoon): Allocate dedicated time to tackle priority tasks or projects that align with your goals and deadlines.\n4. Lunch (Afternoon): Take a break to refuel and recharge before diving back into work or studying. Make sure to pick something nutritious and tasty!\n5. Hobby Time (Evening): Engage in activities you enjoy, such as reading, painting, or playing an instrument, to relax and unwind.\n6. Dinner (Evening): Prepare a balanced meal to ensure you have enough energy for the rest of the evening.\n7. Relaxation/Meditation (Evening): Spend some time winding down by practicing mindfulness, reading a book, or listening to calming music.\n8. Self-reflection (Before Sleep): Review your day and plan for tomorrow. Identify what went well and where you can improve. Reflect on your progress toward your long-term goals and dream big!\n\nRemember, it's important to be flexible with your schedule and adjust as needed based on your energy levels and priorities for the day. Make sure to take breaks when necessary and avoid burnout. Good luck on your journey to becoming the best version of yourself! Let me know if you need any additional help or resources.",
+        "timestamp": "2025-07-02T07:38:08.150824+00:00"
+      },
+      {
+        "role": "user",
+        "content": "Which is better? Gym in the morning or evening?",
+        "timestamp": "2025-07-02T07:40:24.799742+00:00"
+      },
+      {
+        "role": "von",
+        "content": "The best time for gym sessions often depends on your personal schedule, lifestyle, and energy levels. Both morning and evening workouts can be beneficial, but it's essential to find a time that suits you best.\n\nMorning workouts can help kick-start your metabolism, boost your mood, and set a productive tone for the day. If you tend to have a busy schedule or if you're an early riser, working out in the morning might be a good choice for you.\n\nEvening workouts, on the other hand, can provide a nice energy release after a long day of work or school. If you prefer exercising when your energy levels are higher, or if you find that it helps you unwind and relax before bed, an evening workout could be the better option for you.\n\nUltimately, the choice between morning and evening gym sessions comes down to personal preference and what works best for your lifestyle. It's essential to experiment with different times to see which one aligns best with your schedule, energy levels, and goals.",
+        "timestamp": "2025-07-02T07:45:59.287914+00:00"
+      },
+      {
+        "role": "user",
+        "content": "Are pushups are actually beneficial or just overhyped?",
+        "timestamp": "2025-07-02T07:46:23.624479+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Push-ups can be beneficial when performed correctly as part of a well-rounded exercise routine. They primarily target the chest, shoulders, and arms while also engaging the core muscles for stability. However, like any exercise, it's crucial to maintain proper form to avoid injury and ensure maximum benefits. Overuse or improperly performing pushups may lead to shoulder issues over time. It's essential to incorporate a variety of exercises to target all muscle groups evenly and prevent imbalances. As always, consult with a certified personal trainer or fitness professional to design an effective exercise routine tailored to your specific goals and needs.",
+        "timestamp": "2025-07-02T07:51:15.461798+00:00"
+      },
+      {
+        "role": "von",
+        "content": "Goodbye. Take care of yourself. 🌱",
+        "timestamp": "2025-07-02T07:51:41.849695+00:00"
       }
     ],
     "slidingWindowPolicy": "dynamicWithRelevanceScoring",

@@ -1,57 +1,80 @@
 import os
+import json
+import random
+from datetime import datetime, timezone
+import ollama
+# Replace tts_utils with pyttsx3 or create your own
+import pyttsx3
 
+# === CONFIG ===
+MEMORY_PATH = "C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project-VON\\memory\\project_von_memory.json"
+
+# === TTS Function ===
+def speak_text(text):
+    try:
+        engine = pyttsx3.init()
+        engine.say(text)
+        engine.runAndWait()
+    except Exception as e:
+        print(f"TTS Error: {e}")
+
+# === Load system prompt ===
 def load_system_prompt():
-    with open("C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project VON\\prompts\\system_prompt.txt", encoding="utf-8") as f:
+    with open(
+        "C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project-VON\\prompts\\system_prompt.txt",
+        encoding="utf-8"
+    ) as f:
         return f.read()
 
 system_prompt = load_system_prompt()
 
-import json
-from datetime import datetime, timezone
-from tts_utils import speak_text
-
-
-# === CONFIG ===
-MEMORY_PATH = "C:\\Users\\ASUS\\Downloads\\Coding Projects\\Project VON\\memory\\project_von_memory.json"
-
 # === Load memory ===
 def load_memory():
+    if not os.path.exists(MEMORY_PATH):
+        return {"sessionContext": {"messages": []}}
     with open(MEMORY_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+        try:
+            return json.load(f)
+        except json.JSONDecodeError:
+            print("⚠️ Memory file is corrupted. Starting fresh.")
+            return {"sessionContext": {"messages": []}}
 
 # === Save updated memory ===
 def save_memory(data):
     with open(MEMORY_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-import random
-
+# === Generate reply using Ollama locally ===
 def generate_reply(user_input, memory, system_prompt):
-    # Totally offline: local canned responses
-    offline_responses = [
-        "I see. Tell me more about why you feel that way.",
-        "Interesting—what would your best self do here?",
-        "Let’s try to plan a tiny next step together.",
-        "That’s honest. How can we make progress on this?",
-        "Sounds tricky. What do you think would really help?"
-    ]
+    try:
+        messages = [{"role": "system", "content": system_prompt}]
+        
+        # Include last 4 messages as context
+        session_msgs = memory.get("sessionContext", {}).get("messages", [])
+        if session_msgs:
+            messages.extend(session_msgs[-4:])
 
-    # A simple bit of 'smartness'
-    if "lazy" in user_input.lower():
-        return "Feeling unmotivated is normal. Let's pick one tiny goal to start."
-    if "plan" in user_input.lower():
-        return "Sure, let’s plan it step by step. What’s the outcome you want?"
-    if "bye" in user_input.lower():
-        return "Goodbye. Take care of yourself. 🌱"
-    if "help" in user_input.lower():
-        return "I’m always here to help you clarify your goals."
+        messages.append({"role": "user", "content": user_input})
 
-    # Otherwise random canned coaching-style reply
-    return random.choice(offline_responses)
+        # Optional debug
+        print("\n[Debug] Sending to model:\n", json.dumps(messages, indent=2, ensure_ascii=False))
 
+        response = ollama.chat(
+            model='phi',
+            messages=messages
+        )
 
-# === Add message to memory ===
+        print("[Debug] Model reply received\n")
+        return response['message']['content'].strip()
+        
+    except Exception as e:
+        print(f"Error generating reply: {e}")
+        return "I'm having trouble processing your request right now."
+
+# === Append message to memory ===
 def append_message(memory, role, text):
+    if "sessionContext" not in memory:
+        memory["sessionContext"] = {"messages": []}
     new_msg = {
         "role": role,
         "content": text,
@@ -61,9 +84,8 @@ def append_message(memory, role, text):
 
 # === MAIN LOOP ===
 def chat_loop():
-    print("🧠 Von: Hello, I’m Von. Your personal AI memory.\n(Type 'bye' to exit.)")
-    speak_text('Hello, I’m Von. Your personal AI memory.')
-
+    print("🧠 Von: Hello, I'm Von. Your personal AI memory.\n(Type 'bye' to exit, or 'reset' to clear memory.)")
+    speak_text("Hello, I'm Von. Your personal AI memory.")
 
     memory = load_memory()
 
@@ -72,8 +94,14 @@ def chat_loop():
         if not user_input:
             continue
 
-        append_message(memory, "user", user_input)
+        # Handle reset
+        if user_input.lower() == "reset":
+            memory["sessionContext"]["messages"] = []
+            print("🔄 Memory reset.")
+            speak_text("Memory reset.")
+            continue
 
+        # Handle exit
         if user_input.lower() == "bye":
             von_reply = "Goodbye. Take care of yourself. 🌱"
             print(f"Von: {von_reply}")
@@ -81,6 +109,8 @@ def chat_loop():
             append_message(memory, "von", von_reply)
             break
 
+        # Normal flow
+        append_message(memory, "user", user_input)
         von_reply = generate_reply(user_input, memory, system_prompt)
         print(f"Von: {von_reply}")
         speak_text(von_reply)
@@ -92,4 +122,3 @@ def chat_loop():
 
 if __name__ == "__main__":
     chat_loop()
-    
